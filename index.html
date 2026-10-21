@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TrailNest | Responsive Hiking Adventures</title>
+  <meta name="description" content="TrailNest is a fully responsive demo website for guided hiking trips.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#top">Trail<span>Nest</span></a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">
+      <label for="nav-toggle" class="nav-toggle-label"><span></span></label>
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="#trails">Trails</a></li>
+          <li><a href="#why">Why Us</a></li>
+          <li><a href="#stories">Stories</a></li>
+          <li><a href="#join" class="btn btn-small">Join</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section class="hero" id="top">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="eyebrow">Guided hiking trips</p>
+          <h1>Find your next trail, on any screen.</h1>
+          <p class="lead">Plan small-group adventures with local guides. Browse routes, compare difficulty and book in minutes.</p>
+          <div class="btn-group">
+            <a href="#trails" class="btn">Explore Trails</a>
+            <a href="#join" class="btn btn-outline">Get Updates</a>
+          </div>
+        </div>
+        <picture>
+          <source media="(min-width: 900px)" srcset="images/hero-square.svg">
+          <img src="images/hero-wide.svg" alt="Illustration of mountains at sunrise" width="1600" height="700">
+        </picture>
+      </div>
+    </section>
+
+    <section id="trails" class="section">
+      <div class="container">
+        <h2>Popular Trails</h2>
+        <div class="grid grid-auto">
+          <article class="card">
+            <img src="images/trail-forest.svg" alt="Forest trail illustration" loading="lazy" width="640" height="480">
+            <div class="card-body">
+              <h3>Pine Ridge Loop</h3>
+              <p>A shaded forest walk with gentle climbs and wildlife spotting.</p>
+              <p class="meta">8 km &middot; Easy</p>
+            </div>
+          </article>
+          <article class="card">
+            <img src="images/trail-lake.svg" alt="Lake trail illustration" loading="lazy" width="640" height="480">
+            <div class="card-body">
+              <h3>Blue Lake Circuit</h3>
+              <p>Crystal-clear water, picnic spots and wide mountain views.</p>
+              <p class="meta">12 km &middot; Moderate</p>
+            </div>
+          </article>
+          <article class="card">
+            <img src="images/trail-desert.svg" alt="Desert trail illustration" loading="lazy" width="640" height="480">
+            <div class="card-body">
+              <h3>Red Mesa Climb</h3>
+              <p>A steep sunrise hike across warm sandstone ridges.</p>
+              <p class="meta">15 km &middot; Hard</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats" aria-label="TrailNest in numbers">
+      <div class="container grid grid-stats">
+        <div><strong>120+</strong><span>Trails</span></div>
+        <div><strong>45</strong><span>Local guides</span></div>
+        <div><strong>9k</strong><span>Happy hikers</span></div>
+        <div><strong>4.9</strong><span>Average rating</span></div>
+      </div>
+    </section>
+
+    <section id="why" class="section">
+      <div class="container split">
+        <img src="images/about.svg" alt="Mountain landscape with a bright sun" loading="lazy" width="900" height="600">
+        <div>
+          <h2>Why hike with us</h2>
+          <p>Every route is scouted and rated by our guides, so you know what to expect before you set off.</p>
+          <ul class="checklist">
+            <li>Small groups, never more than 10</li>
+            <li>Certified local guides</li>
+            <li>Flexible booking and free rescheduling</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="stories" class="section section-alt">
+      <div class="container">
+        <h2>Hiker Stories</h2>
+        <div class="grid grid-auto">
+          <blockquote class="quote"><p>The guide knew every corner of the mountain. Best weekend I've had.</p><cite>Aarav, Pune</cite></blockquote>
+          <blockquote class="quote"><p>Booking was simple on my phone, and the trail notes were spot on.</p><cite>Meera, Mumbai</cite></blockquote>
+          <blockquote class="quote"><p>Great pace for beginners, and the views at the lake were unreal.</p><cite>Rohan, Nashik</cite></blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section id="join" class="section">
+      <div class="container narrow">
+        <h2>Get trail updates</h2>
+        <form class="signup" action="#" method="post">
+          <label for="email" class="visually-hidden">Email address</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required>
+          <button type="submit" class="btn">Subscribe</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container grid grid-footer">
+      <div>
+        <p class="logo">Trail<span>Nest</span></p>
+        <p>Guided hikes for everyone.</p>
+      </div>
+      <nav aria-label="Trails footer">
+        <h3>Trails</h3>
+        <ul><li><a href="#trails">Easy</a></li><li><a href="#trails">Moderate</a></li><li><a href="#trails">Hard</a></li></ul>
+      </nav>
+      <nav aria-label="Company footer">
+        <h3>Company</h3>
+        <ul><li><a href="#why">About</a></li><li><a href="#stories">Stories</a></li><li><a href="#join">Contact</a></li></ul>
+      </nav>
+      <div>
+        <h3>Contact</h3>
+        <p>hello@trailnest.example</p>
+      </div>
+    </div>
+    <p class="copyright">&copy; 2026 TrailNest. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
